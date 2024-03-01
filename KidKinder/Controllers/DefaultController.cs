@@ -90,8 +90,14 @@ namespace KidKinder.Controllers
         }
 
         public PartialViewResult PartialFooter()
-        {
+        {         
             return PartialView();
+        }
+
+        public PartialViewResult PartialContactUs(int id = 1)
+        {
+            var values = context.Addresses.Find(id);
+            return PartialView(values);
         }
 
         public PartialViewResult PartialScripts()

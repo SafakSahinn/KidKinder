@@ -21,7 +21,7 @@ namespace KidKinder.Context
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Admin> Admins { get; set; }
-        public DbSet<Address> ad { get; set; }
+        public DbSet<Address> Addresses { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<Branch> Branches { get; set; }
     }

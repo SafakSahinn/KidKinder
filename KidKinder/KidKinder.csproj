@@ -182,6 +182,14 @@
     <Compile Include="Migrations\202403011208332_mig7.designer.cs">
       <DependentUpon>202403011208332_mig7.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202403011417591_mig8.cs" />
+    <Compile Include="Migrations\202403011417591_mig8.designer.cs">
+      <DependentUpon>202403011417591_mig8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403011437179_mig9.cs" />
+    <Compile Include="Migrations\202403011437179_mig9.designer.cs">
+      <DependentUpon>202403011437179_mig9.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SendMessageViewModel.cs" />
     <Compile Include="Models\TeacherViewModel.cs" />
@@ -662,6 +670,7 @@
     <Content Include="Views\ErrorPage\Page404.cshtml" />
     <Content Include="Views\Login\AdminLogin.cshtml" />
     <Content Include="Views\Default\PartialAboutList.cshtml" />
+    <Content Include="Views\Default\PartialContactUs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -702,6 +711,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403011208332_mig7.resx">
       <DependentUpon>202403011208332_mig7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403011417591_mig8.resx">
+      <DependentUpon>202403011417591_mig8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403011437179_mig9.resx">
+      <DependentUpon>202403011437179_mig9.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -11,9 +11,21 @@ namespace KidKinder.Controllers
     public class ContactController : Controller
     {
         KidKinderContext context = new KidKinderContext();
+
+        [HttpGet]
         public ActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Index(Contact contact)
+        {
+            contact.SendDate = DateTime.Now;
+            contact.IsRead = false;
+            context.Contacts.Add(contact);
+            context.SaveChanges();
+            return RedirectToAction("Index", "Default");
         }
 
         public PartialViewResult ContactHeaderPartial()

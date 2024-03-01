@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Action("PartialHead", "Default")
+
+<body>
+    <!-- Navbar Start -->
+    @Html.Action("PartialNavbar", "Default")
+    <!-- Navbar End -->
+    <!-- Header Start -->
+    @Html.Action("ClassHeaderPartial", "Class")
+    <!-- Header End -->
+    <!-- Class Start -->
+    @Html.Action("PartialClassRooms", "Default")
+    <!-- Class End -->
+    <!-- Registration Start -->
+    @Html.Action("PartialBookASeat", "Default")
+    <!-- Registration End -->
+
+    @Html.Action("PartialFooter", "Default")
+
+    @Html.Action("PartialScripts", "Default")
+
+</body>
+</html>
+

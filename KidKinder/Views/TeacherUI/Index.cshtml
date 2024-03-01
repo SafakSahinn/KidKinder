@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Action("PartialHead", "Default")
+
+<body>
+    <!-- Navbar Start -->
+    @Html.Action("PartialNavbar", "Default")
+    <!-- Navbar End -->
+    <!-- Header Start -->
+    @Html.Action("TeacherHeaderPartial", "TeacherUI")
+    <!-- Header End -->
+    <!-- Team Start -->
+    @Html.Action("PartialTeacher", "Default")
+    <!-- Team End -->
+
+    @Html.Action("PartialFooter", "Default")
+
+    @Html.Action("PartialScripts", "Default")
+
+</body>
+</html>

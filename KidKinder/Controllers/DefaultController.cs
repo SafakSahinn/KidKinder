@@ -85,7 +85,8 @@ namespace KidKinder.Controllers
 
         public PartialViewResult PartialTestimonial()
         {
-            return PartialView();
+            var values = context.Testimonials.ToList();
+            return PartialView(values);
         }
 
         public PartialViewResult PartialFooter()

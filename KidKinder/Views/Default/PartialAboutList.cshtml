@@ -1,0 +1,13 @@
+﻿@model List<KidKinder.Entities.AboutList>
+
+<div class="col-6 col-md-8">
+    <ul class="list-inline m-0">
+
+        @foreach (var item in Model)
+        {
+            <li class="py-2 border-top border-bottom">
+                <i class="fa fa-check text-primary mr-3"></i>@item.Description
+            </li>
+        }
+    </ul>
+</div>

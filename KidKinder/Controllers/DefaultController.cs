@@ -79,7 +79,8 @@ namespace KidKinder.Controllers
 
         public PartialViewResult PartialTeacher()
         {
-            return PartialView();
+            var values = context.Teachers.ToList();
+            return PartialView(values);
         }
 
         public PartialViewResult PartialTestimonial()

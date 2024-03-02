@@ -1,9 +1,8 @@
-﻿@model List<KidKinder.Entities.Teacher>
+﻿@model List<KidKinder.Entities.ClassRoom>
 @{
-    ViewBag.Title = "TeacherList";
+    ViewBag.Title = "ClassList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-
 
 <div class="pcoded-inner-content">
     <!-- Main-body start -->
@@ -14,8 +13,8 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h5>Öğretmen Listesi</h5>
-                        <span>Öğretmenler ile İlgili İşlemleri Buradan Yapabilirsiniz</span>
+                        <h5>Sınıf Listesi</h5>
+                        <span>Sınıflar ile İlgili İşlemleri Buradan Yapabilirsiniz</span>
                         <div class="card-header-right">
                             <ul class="list-unstyled card-option">
                                 <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -32,8 +31,12 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Ad Soyad</th>
-                                        <th>Branş</th>
+                                        <th>Sınıf Adı</th>
+                                        <th>Açıklama</th>
+                                        <th>Yaş Grubu</th>
+                                        <th>Kontenjan</th>
+                                        <th>Ders Saati</th>
+                                        <th>Ücret</th>
                                         <th>Sil</th>
                                         <th>Güncelle</th>
                                     </tr>
@@ -42,16 +45,20 @@
                                     @foreach (var item in Model)
                                     {
                                         <tr>
-                                            <td>@item.TeacherId</td>
-                                            <td>@item.NameSurname</td>
-                                            <td>@item.Branch.Name</td>
-                                            <td><a href="/Teacher/DeleteTeacher/@item.TeacherId" class="btn btn-danger">Sil</a></td>
-                                            <td><a href="/Teacher/updateTeacher/@item.TeacherId" class="btn btn-success">Güncelle</a></td>
+                                            <td>@item.ClassRoomId</td>
+                                            <td>@item.Title</td>
+                                            <td>@item.Description</td>
+                                            <td>@item.AgeOfKids</td>
+                                            <td>@item.TotalSeats</td>
+                                            <td>@item.ClassTime</td>
+                                            <td>@item.Price</td>
+                                            <td><a href="/AdminClass/DeleteClass/@item.ClassRoomId" class="btn btn-danger">Sil</a></td>
+                                            <td><a href="/AdminClass/UpdateClass/@item.ClassRoomId" class="btn btn-success">Güncelle</a></td>
                                         </tr>
                                     }
                                 </tbody>
                             </table>
-                            <a href="/Teacher/CreateTeacher/" class="btn btn-primary">Yeni Öğretmen Ekle</a>
+                            <a href="/AdminClass/CreateClass/" class="btn btn-primary">Yeni Sınıf Ekle</a>
                         </div>
                     </div>
                 </div>
@@ -59,3 +66,4 @@
         </div>
     </div>
 </div>
+

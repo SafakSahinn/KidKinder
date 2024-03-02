@@ -52,7 +52,7 @@ namespace KidKinder.Controllers
 
         public PartialViewResult PartialClassRooms()
         {
-            var values = context.ClassRooms.ToList();
+            var values = context.ClassRooms.OrderByDescending(x => x.ClassRoomId).Take(3).ToList();
             return PartialView(values);
         }
 

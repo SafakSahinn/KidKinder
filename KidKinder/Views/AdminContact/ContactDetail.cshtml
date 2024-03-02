@@ -1,0 +1,70 @@
+﻿@model KidKinder.Entities.Contact
+@{
+    ViewBag.Title = "ContactDetail";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="pcoded-inner-content">
+    <!-- Main-body start -->
+    <div class="main-body">
+        <div class="page-wrapper">
+            <!-- Page-body start -->
+            <div class="page-body">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Mesaj Detayları</h5>
+                        <span>Mesaj ile ilgili detaylara buradan ulaşabilirsiniz</span>
+                        <div class="card-header-right">
+                            <ul class="list-unstyled card-option">
+                                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                <li><i class="fa fa-trash close-card"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-block table-border-style">
+                        <div class="container">
+
+                            <table class="table table-bordered table-striped table-hover">
+                                <tbody>
+                                    @*<tr>
+                                        <th scope="row" class="col-sm-3">Mesaj ID</th>
+                                        <td class="col-sm-9">@Model.ContactId</td>
+                                    </tr>*@
+                                    <tr>
+                                        <th scope="row" class="col-sm-3">Gönderim Tarihi</th>
+                                        <td class="col-sm-9">@Model.SendDate</td>
+                                    </tr>
+                                    @*<tr>
+                                            <th scope="row" class="col-sm-3">Okundu Bilgisi</th>
+                                            <td class="col-sm-9">@Model.IsRead</td>
+                                        </tr>*@
+                                    <tr>
+                                        <th scope="row" class="col-sm-3">Ad Soyad</th>
+                                        <td class="col-sm-9">@Model.NameSurname</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="col-sm-3">E-Posta</th>
+                                        <td class="col-sm-9">@Model.Email</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="col-sm-3">Konu</th>
+                                        <td class="col-sm-9">@Model.Subject</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="col-sm-3">Mesaj</th>
+                                        <td class="col-sm-9">@Model.Message</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

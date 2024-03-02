@@ -130,6 +130,7 @@
     <Compile Include="Context\KidKinderContext.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminClassController.cs" />
+    <Compile Include="Controllers\AdminContactController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\AdminParentController.cs" />
     <Compile Include="Controllers\AdminStudentController.cs" />
@@ -711,6 +712,10 @@
     <Content Include="Views\AdminParent\ParentList.cshtml" />
     <Content Include="Views\AdminParent\CreateParent.cshtml" />
     <Content Include="Views\AdminParent\UpdateParent.cshtml" />
+    <Content Include="Views\AdminContact\ContactList.cshtml" />
+    <Content Include="Views\AdminContact\UnReadContactList.cshtml" />
+    <Content Include="Views\AdminContact\ReadedContactList.cshtml" />
+    <Content Include="Views\AdminContact\ContactDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

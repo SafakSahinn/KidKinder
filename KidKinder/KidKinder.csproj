@@ -131,6 +131,8 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminClassController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\AdminParentController.cs" />
+    <Compile Include="Controllers\AdminStudentController.cs" />
     <Compile Include="Controllers\ClassController.cs" />
     <Compile Include="Controllers\ClassRooms.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -155,7 +157,9 @@
     <Compile Include="Entities\Gallery.cs" />
     <Compile Include="Entities\MailSubscribe.cs" />
     <Compile Include="Entities\Notification.cs" />
+    <Compile Include="Entities\Parent.cs" />
     <Compile Include="Entities\Service.cs" />
+    <Compile Include="Entities\Student.cs" />
     <Compile Include="Entities\Teacher.cs" />
     <Compile Include="Entities\Testimonial.cs" />
     <Compile Include="Global.asax.cs">
@@ -200,6 +204,14 @@
     <Compile Include="Migrations\202403011726103_mig10.cs" />
     <Compile Include="Migrations\202403011726103_mig10.designer.cs">
       <DependentUpon>202403011726103_mig10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403021033128_mig11.cs" />
+    <Compile Include="Migrations\202403021033128_mig11.designer.cs">
+      <DependentUpon>202403021033128_mig11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403021128013_12.cs" />
+    <Compile Include="Migrations\202403021128013_12.designer.cs">
+      <DependentUpon>202403021128013_12.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SendMessageViewModel.cs" />
@@ -693,6 +705,12 @@
     <Content Include="Views\AdminClass\ClassList.cshtml" />
     <Content Include="Views\AdminClass\CreateClass.cshtml" />
     <Content Include="Views\AdminClass\UpdateClass.cshtml" />
+    <Content Include="Views\AdminStudent\StudentList.cshtml" />
+    <Content Include="Views\AdminStudent\CreateStudent.cshtml" />
+    <Content Include="Views\AdminStudent\UpdateStudent.cshtml" />
+    <Content Include="Views\AdminParent\ParentList.cshtml" />
+    <Content Include="Views\AdminParent\CreateParent.cshtml" />
+    <Content Include="Views\AdminParent\UpdateParent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -742,6 +760,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403011726103_mig10.resx">
       <DependentUpon>202403011726103_mig10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403021033128_mig11.resx">
+      <DependentUpon>202403021033128_mig11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403021128013_12.resx">
+      <DependentUpon>202403021128013_12.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

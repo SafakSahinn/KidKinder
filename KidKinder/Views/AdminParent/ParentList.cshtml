@@ -1,6 +1,6 @@
-﻿@model List<KidKinder.Entities.ClassRoom>
+﻿@model List<KidKinder.Entities.Parent>
 @{
-    ViewBag.Title = "ClassList";
+    ViewBag.Title = "ParentList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
@@ -13,8 +13,8 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h5>Sınıf Listesi</h5>
-                        <span>Sınıflar ile ilgili işlemleri buradan yapabilirsiniz</span>
+                        <h5>Veli Listesi</h5>
+                        <span>Veliler ile ilgili işlemleri buradan yapabilirsiniz</span>
                         <div class="card-header-right">
                             <ul class="list-unstyled card-option">
                                 <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -31,12 +31,7 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Sınıf Adı</th>
-                                        <th>Açıklama</th>
-                                        <th>Yaş Grubu</th>
-                                        <th>Kontenjan</th>
-                                        <th>Ders Saati</th>
-                                        <th>Ücret</th>
+                                        <th>Veli Ad Soyad</th>
                                         <th>Sil</th>
                                         <th>Güncelle</th>
                                     </tr>
@@ -45,20 +40,15 @@
                                     @foreach (var item in Model)
                                     {
                                         <tr>
-                                            <td>@item.ClassRoomId</td>
-                                            <td>@item.Title</td>
-                                            <td>@item.Description</td>
-                                            <td>@item.AgeOfKids</td>
-                                            <td>@item.TotalSeats</td>
-                                            <td>@item.ClassTime</td>
-                                            <td>@item.Price</td>
-                                            <td><a href="/AdminClass/DeleteClass/@item.ClassRoomId" class="btn btn-danger">Sil</a></td>
-                                            <td><a href="/AdminClass/UpdateClass/@item.ClassRoomId" class="btn btn-success">Güncelle</a></td>
+                                            <td>@item.ParentId</td>
+                                            <td>@item.NameSurname</td>
+                                            <td><a href="/AdminParent/DeleteParent/@item.ParentId" class="btn btn-danger">Sil</a></td>
+                                            <td><a href="/AdminParent/UpdateParent/@item.ParentId" class="btn btn-success">Güncelle</a></td>
                                         </tr>
                                     }
                                 </tbody>
                             </table>
-                            <a href="/AdminClass/CreateClass/" class="btn btn-primary">Yeni Sınıf Ekle</a>
+                            <a href="/AdminParent/CreateParent/" class="btn btn-primary">Yeni Veli Ekle</a>
                         </div>
                     </div>
                 </div>

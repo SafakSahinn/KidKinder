@@ -1,6 +1,6 @@
-﻿@model KidKinder.Entities.Teacher
+﻿@model KidKinder.Entities.Student
 @{
-    ViewBag.Title = "UpdateTeacher";
+    ViewBag.Title = "UpdateStudent";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
@@ -13,36 +13,30 @@
                         <!-- Basic Form Inputs card start -->
                         <div class="card">
                             <div class="card-header">
-                                <h5>Öğretmen Güncelleme Sayfası</h5>
-                                <span>Öğretmen ile ilgili verileri eksiksiz olarak giriniz</span>
+                                <h5>Yeni Öğrenci Girişi</h5>
+                                <span>Öğrenciler ile ilgili verileri eksiksiz olarak giriniz</span>
                             </div>
                             <div class="card-block">
                                 <form method="post">
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Öğretmen Id</label>
+                                        <label class="col-sm-2 col-form-label">Öğrenci ID</label>
                                         <div class="col-sm-10">
-                                            @Html.TextBoxFor(x => x.TeacherId, new { @class = "form-control" })
+                                            @Html.TextBoxFor(x => x.StudentId, new { @class = "form-control" })
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Öğretmen Ad Soyad</label>
+                                        <label class="col-sm-2 col-form-label">Öğrenci Ad Soyad</label>
                                         <div class="col-sm-10">
                                             @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Öğretmen Branş</label>
-                                        <div class="col-sm-10">
-                                            @Html.DropDownListFor(x => x.BranchId, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Öğretmen Görsel</label>
+                                        <label class="col-sm-2 col-form-label">Öğrenci Görseli</label>
                                         <div class="col-sm-10">
                                             @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary">Öğretmeni Güncelle</button>
+                                    <button class="btn btn-primary">Öğrenciyi Güncelle</button>
                                 </form>
                             </div>
                         </div>

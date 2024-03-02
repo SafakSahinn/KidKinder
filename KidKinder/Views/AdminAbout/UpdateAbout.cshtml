@@ -1,0 +1,67 @@
+﻿@model KidKinder.Entities.About
+@{
+    ViewBag.Title = "UpdateClass";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="pcoded-inner-content">
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- Basic Form Inputs card start -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Hakkımızda Güncelleme Sayfası</h5>
+                                <span>Hakkımızda ile ilgili verileri eksiksiz olarak giriniz</span>
+                            </div>
+                            <div class="card-block">
+                                <form method="post">
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Hakkımızda ID</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.AboutId, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Etiket</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Başlık</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.Header, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Açıklama</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Büyük Görsel Url</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.BigImageUrl, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Küçük Görsel Url</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.SmallImageUrl, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary">Hakkmızda Güncelle</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

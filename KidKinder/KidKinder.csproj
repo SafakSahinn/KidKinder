@@ -129,6 +129,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\KidKinderContext.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AdminAboutController.cs" />
+    <Compile Include="Controllers\AdminAboutListController.cs" />
     <Compile Include="Controllers\AdminClassController.cs" />
     <Compile Include="Controllers\AdminContactController.cs" />
     <Compile Include="Controllers\AdminGalleryController.cs" />
@@ -730,6 +732,10 @@
     <Content Include="Views\AdminService\ServiceList.cshtml" />
     <Content Include="Views\AdminService\CreateService.cshtml" />
     <Content Include="Views\AdminService\UpdateService.cshtml" />
+    <Content Include="Views\AdminAbout\Index.cshtml" />
+    <Content Include="Views\AdminAbout\UpdateAbout.cshtml" />
+    <Content Include="Views\AdminAboutList\Index.cshtml" />
+    <Content Include="Views\AdminAboutList\UpdateAboutList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -131,9 +131,12 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminClassController.cs" />
     <Compile Include="Controllers\AdminContactController.cs" />
+    <Compile Include="Controllers\AdminGalleryController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\AdminParentController.cs" />
+    <Compile Include="Controllers\AdminServiceController.cs" />
     <Compile Include="Controllers\AdminStudentController.cs" />
+    <Compile Include="Controllers\AdminTestimonialController.cs" />
     <Compile Include="Controllers\ClassController.cs" />
     <Compile Include="Controllers\ClassRooms.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -716,6 +719,17 @@
     <Content Include="Views\AdminContact\UnReadContactList.cshtml" />
     <Content Include="Views\AdminContact\ReadedContactList.cshtml" />
     <Content Include="Views\AdminContact\ContactDetail.cshtml" />
+    <Content Include="Views\AdminGallery\GalleryList.cshtml" />
+    <Content Include="Views\AdminGallery\CreateGallery.cshtml" />
+    <Content Include="Views\AdminGallery\UpdateGallery.cshtml" />
+    <Content Include="Views\AdminTestimonial\TestimonialList.cshtml" />
+    <Content Include="Views\AdminTestimonial\CreateTestimonial.cshtml" />
+    <Content Include="Views\AdminTestimonial\UpdateTestimonial.cshtml" />
+    <Content Include="Views\AdminGallery\PasiveGallerytList.cshtml" />
+    <Content Include="Views\AdminGallery\ActiveGallerytList.cshtml" />
+    <Content Include="Views\AdminService\ServiceList.cshtml" />
+    <Content Include="Views\AdminService\CreateService.cshtml" />
+    <Content Include="Views\AdminService\UpdateService.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

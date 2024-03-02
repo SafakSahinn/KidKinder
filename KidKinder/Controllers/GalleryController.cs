@@ -12,7 +12,7 @@ namespace KidKinder.Controllers
         KidKinderContext context = new KidKinderContext();
         public ActionResult Index()
         {
-            var values = context.Galleries.Where(x => x.Status == true).ToList();
+            var values = context.Galleries.Where(x => x.Status == true).OrderByDescending(y => y.GalleryId).Take(6).ToList();
             return View(values);
         }
 

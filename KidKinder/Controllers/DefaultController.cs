@@ -34,7 +34,7 @@ namespace KidKinder.Controllers
 
         public PartialViewResult PartialService()
         {
-            var values = context.Services.ToList();
+            var values = context.Services.OrderByDescending(x => x.ServiceId).Take(6).ToList();
             return PartialView(values);
         }
 

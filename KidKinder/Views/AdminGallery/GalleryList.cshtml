@@ -1,0 +1,61 @@
+﻿@model List<KidKinder.Entities.Gallery>
+@{
+    ViewBag.Title = "ClassList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="pcoded-inner-content">
+    <!-- Main-body start -->
+    <div class="main-body">
+        <div class="page-wrapper">
+            <!-- Page-body start -->
+            <div class="page-body">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Görseller</h5>
+                        <span>Görseller ile ilgili işlemleri buradan yapabilirsiniz</span>
+                        <div class="card-header-right">
+                            <ul class="list-unstyled card-option">
+                                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                <li><i class="fa fa-trash close-card"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-block table-border-style">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Görsel Url</th>
+                                        <th>Görsel Durumu</th>
+                                        <th>Sil</th>
+                                        <th>Güncelle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.GalleryId</td>
+                                            <td>@item.ImageUrl</td>
+                                            <td>@item.Status</td>
+                                            <td><a href="/AdminGallery/DeleteGallery/@item.GalleryId" class="btn btn-danger">Sil</a></td>
+                                            <td><a href="/AdminGallery/UpdateGallery/@item.GalleryId" class="btn btn-success">Güncelle</a></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <a href="/AdminGallery/CreateGallery/" class="btn btn-primary">Yeni Görsel Ekle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

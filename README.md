@@ -6,8 +6,12 @@
 # Technologies Used
 -ASP.NET MVC (.NET Framework)
 
--Entity Framework
+-Entity Framework (ORM) -Code First
 
 -MSSQL
 
 -HTML/CSS
+
+-BootStrap
+
+-Authorize

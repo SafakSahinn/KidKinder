@@ -1,0 +1,58 @@
+﻿@model KidKinder.Entities.BookASeat
+@{
+    ViewBag.Title = "ContactDetail";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="pcoded-inner-content">
+    <!-- Main-body start -->
+    <div class="main-body">
+        <div class="page-wrapper">
+            <!-- Page-body start -->
+            <div class="page-body">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Rezervasyon Detayları</h5>
+                        <span>Rezervasyon ile ilgili detaylara buradan ulaşabilirsiniz</span>
+                        <div class="card-header-right">
+                            <ul class="list-unstyled card-option">
+                                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                <li><i class="fa fa-trash close-card"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-block table-border-style">
+                        <div class="container">
+
+                            <table class="table table-bordered table-striped table-hover">
+                                <tbody>
+                                    <tr>
+                                            <th scope="row" class="col-sm-3">Rezervasyon ID</th>
+                                            <td class="col-sm-9">@Model.BookASeatId</td>
+                                        </tr>
+                                    <tr>
+                                        <th scope="row" class="col-sm-3">Ad Soyad</th>
+                                        <td class="col-sm-9">@Model.Name</td>
+                                    </tr>
+                                    <tr>
+                                            <th scope="row" class="col-sm-3">E-Posta</th>
+                                            <td class="col-sm-9">@Model.Email</td>
+                                        </tr>
+                                    <tr>
+                                        <th scope="row" class="col-sm-3">Sınıf</th>
+                                        <td class="col-sm-9">@Model.Class</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

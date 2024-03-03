@@ -34,6 +34,7 @@
                                         <th>#</th>
                                         <th>Ad Soyad</th>
                                         <th>Branş</th>
+                                        <th>Görsel</th>
                                         <th>Sil</th>
                                         <th>Güncelle</th>
                                     </tr>
@@ -45,6 +46,7 @@
                                             <td>@item.TeacherId</td>
                                             <td>@item.NameSurname</td>
                                             <td>@item.Branch.Name</td>
+                                            <td><img src="@item.ImageUrl" alt="user image" class="img-square img-100 align-top m-r-15"></td>
                                             <td><a href="/Teacher/DeleteTeacher/@item.TeacherId" class="btn btn-danger">Sil</a></td>
                                             <td><a href="/Teacher/updateTeacher/@item.TeacherId" class="btn btn-success">Güncelle</a></td>
                                         </tr>

@@ -1,0 +1,37 @@
+﻿@model KidKinder.Entities.Branch
+@{
+    ViewBag.Title = "CreateClass";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="pcoded-inner-content">
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- Basic Form Inputs card start -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Yeni Branş Girişi</h5>
+                                <span>Branş ile ilgili verileri eksiksiz olarak giriniz</span>
+                            </div>
+                            <div class="card-block">
+                                <form method="post">
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Branş Adı</label>
+                                        <div class="col-sm-10">
+                                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary">Branşı Kaydet</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

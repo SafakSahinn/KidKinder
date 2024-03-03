@@ -1,4 +1,4 @@
-﻿@model List<KidKinder.Entities.Testimonial>
+﻿@model List<KidKinder.Entities.BookASeat>
 @{
     ViewBag.Title = "ClassList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
@@ -13,8 +13,8 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h5>Referanslar</h5>
-                        <span>Referanslar ile ilgili işlemleri buradan yapabilirsiniz</span>
+                        <h5>Rezervasyonlar</h5>
+                        <span>Rezervasyonlar ile ilgili işlemleri buradan yapabilirsiniz</span>
                         <div class="card-header-right">
                             <ul class="list-unstyled card-option">
                                 <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -32,29 +32,26 @@
                                     <tr>
                                         <th>#</th>
                                         <th>Ad Soyad</th>
-                                        <th>Görsel</th>
-                                        <th>Ünvan</th>
-                                        <th>Yorum</th>
+                                        <th>E-Posta</th>
+                                        <th>Sınıf</th>
+                                        <th>Detaylar</th>
                                         <th>Sil</th>
-                                        <th>Güncelle</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach (var item in Model)
                                     {
                                         <tr>
-                                            <td>@item.TestimonialId</td>
-                                            <td>@item.NameSurname</td>
-                                            <td><img src="@item.ImageUrl" alt="user image" class="img-square img-100 align-top m-r-15"></td>
-                                            <td>@item.Title</td>
-                                            <td>@item.Comment</td>
-                                            <td><a href="/AdminTestimonial/DeleteTestimonial/@item.TestimonialId" class="btn btn-danger">Sil</a></td>
-                                            <td><a href="/AdminTestimonial/UpdateTestimonial/@item.TestimonialId" class="btn btn-success">Güncelle</a></td>
+                                            <td>@item.BookASeatId</td>
+                                            <td>@item.Name</td>
+                                            <td>@item.Email</td>
+                                            <td>@item.Class</td>
+                                            <td><a href="/AdminBookASeat/DetailBookASeat/@item.BookASeatId" class="btn btn-dark">Detaylar</a></td>
+                                            <td><a href="/AdminBookASeat/DeleteBookASeat/@item.BookASeatId" class="btn btn-danger">Sil</a></td>
                                         </tr>
                                     }
                                 </tbody>
                             </table>
-                            <a href="/AdminTestimonial/CreateTestimonial/" class="btn btn-primary">Yeni Referans Ekle</a>
                         </div>
                     </div>
                 </div>

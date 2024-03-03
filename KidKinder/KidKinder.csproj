@@ -131,6 +131,8 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminAboutController.cs" />
     <Compile Include="Controllers\AdminAboutListController.cs" />
+    <Compile Include="Controllers\AdminBookASeatController.cs" />
+    <Compile Include="Controllers\AdminBranchController.cs" />
     <Compile Include="Controllers\AdminClassController.cs" />
     <Compile Include="Controllers\AdminContactController.cs" />
     <Compile Include="Controllers\AdminGalleryController.cs" />
@@ -736,6 +738,13 @@
     <Content Include="Views\AdminAbout\UpdateAbout.cshtml" />
     <Content Include="Views\AdminAboutList\Index.cshtml" />
     <Content Include="Views\AdminAboutList\UpdateAboutList.cshtml" />
+    <Content Include="Views\AdminBookASeat\BookASeatList.cshtml" />
+    <Content Include="Views\AdminBookASeat\DetailBookASeat.cshtml" />
+    <Content Include="Views\AdminBranch\BranchList.cshtml" />
+    <Content Include="Views\AdminBranch\CreateBranch.cshtml" />
+    <Content Include="Views\AdminBranch\UpdateBranch.cshtml" />
+    <Content Include="Views\Dashboard\TeacherDashboardPartial.cshtml" />
+    <Content Include="Views\Dashboard\BranchDashboardPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

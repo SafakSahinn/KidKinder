@@ -1,4 +1,4 @@
-﻿@model List<KidKinder.Entities.Testimonial>
+﻿@model List<KidKinder.Entities.Branch>
 @{
     ViewBag.Title = "ClassList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
@@ -13,8 +13,8 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h5>Referanslar</h5>
-                        <span>Referanslar ile ilgili işlemleri buradan yapabilirsiniz</span>
+                        <h5>Branş Listesi</h5>
+                        <span>Branşlar ile ilgili işlemleri buradan yapabilirsiniz</span>
                         <div class="card-header-right">
                             <ul class="list-unstyled card-option">
                                 <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -31,10 +31,7 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Ad Soyad</th>
-                                        <th>Görsel</th>
-                                        <th>Ünvan</th>
-                                        <th>Yorum</th>
+                                        <th>Branş Adı</th>
                                         <th>Sil</th>
                                         <th>Güncelle</th>
                                     </tr>
@@ -43,18 +40,15 @@
                                     @foreach (var item in Model)
                                     {
                                         <tr>
-                                            <td>@item.TestimonialId</td>
-                                            <td>@item.NameSurname</td>
-                                            <td><img src="@item.ImageUrl" alt="user image" class="img-square img-100 align-top m-r-15"></td>
-                                            <td>@item.Title</td>
-                                            <td>@item.Comment</td>
-                                            <td><a href="/AdminTestimonial/DeleteTestimonial/@item.TestimonialId" class="btn btn-danger">Sil</a></td>
-                                            <td><a href="/AdminTestimonial/UpdateTestimonial/@item.TestimonialId" class="btn btn-success">Güncelle</a></td>
+                                            <td>@item.BranchId</td>
+                                            <td>@item.Name</td>
+                                            <td><a href="/AdminBranch/DeleteBranch/@item.BranchId" class="btn btn-danger">Sil</a></td>
+                                            <td><a href="/AdminBranch/UpdateBranch/@item.BranchId" class="btn btn-success">Güncelle</a></td>
                                         </tr>
                                     }
                                 </tbody>
                             </table>
-                            <a href="/AdminTestimonial/CreateTestimonial/" class="btn btn-primary">Yeni Referans Ekle</a>
+                            <a href="/AdminBranch/CreateBranch/" class="btn btn-primary">Yeni Branş Ekle</a>
                         </div>
                     </div>
                 </div>

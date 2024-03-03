@@ -37,6 +37,7 @@
                                         <th>Kontenjan</th>
                                         <th>Ders Saati</th>
                                         <th>Ücret</th>
+                                        <th>Görsel</th>
                                         <th>Sil</th>
                                         <th>Güncelle</th>
                                     </tr>
@@ -52,6 +53,7 @@
                                             <td>@item.TotalSeats</td>
                                             <td>@item.ClassTime</td>
                                             <td>@item.Price</td>
+                                            <td><img src="@item.ImageUrl" alt="user image" class="img-square img-100 align-top m-r-15"></td>
                                             <td><a href="/AdminClass/DeleteClass/@item.ClassRoomId" class="btn btn-danger">Sil</a></td>
                                             <td><a href="/AdminClass/UpdateClass/@item.ClassRoomId" class="btn btn-success">Güncelle</a></td>
                                         </tr>

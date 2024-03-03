@@ -34,8 +34,8 @@
                                         <th>Etiket</th>
                                         <th>Başlık</th>
                                         <th>Açıklama</th>
-                                        <th>Büyük Görsel Url</th>
-                                        <th>Küçük Görsel Url</th>
+                                        <th>Büyük Görsel</th>
+                                        <th>Küçük Görsel</th>
                                         <th>Güncelle</th>
                                     </tr>
                                 </thead>
@@ -47,8 +47,8 @@
                                             <td>@item.Title</td>
                                             <td>@item.Header</td>
                                             <td>@item.Description</td>
-                                            <td>@item.BigImageUrl</td>
-                                            <td>@item.SmallImageUrl</td>
+                                            <td><img src="@item.BigImageUrl" alt="user image" class="img-square img-100 align-top m-r-15"></td>
+                                            <td><img src="@item.SmallImageUrl" alt="user image" class="img-square img-100 align-top m-r-15"></td>
                                             <td><a href="/AdminAbout/UpdateAbout/@item.AboutId" class="btn btn-success">Güncelle</a></td>
                                         </tr>
                                     }

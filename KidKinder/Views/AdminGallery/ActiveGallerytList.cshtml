@@ -31,7 +31,7 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Görsel Url</th>
+                                        <th>Görsel</th>
                                         <th>Görsel Durumu</th>
                                         <th>Sil</th>
                                         <th>Güncelle</th>
@@ -42,7 +42,7 @@
                                     {
                                         <tr>
                                             <td>@item.GalleryId</td>
-                                            <td>@item.ImageUrl</td>
+                                            <td><img src="@item.ImageUrl" alt="user image" class="img-square img-100 align-top m-r-15"></td>
                                             <td>@item.Status</td>
                                             <td><a href="/AdminGallery/DeleteGallery/@item.GalleryId" class="btn btn-danger">Sil</a></td>
                                             <td><a href="/AdminGallery/UpdateGallery/@item.GalleryId" class="btn btn-success">Güncelle</a></td>

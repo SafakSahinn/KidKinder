@@ -1,4 +1,4 @@
-﻿@model KidKinder.Entities.Gallery
+﻿@model KidKinder.Entities.Branch
 @{
     ViewBag.Title = "UpdateClass";
     Layout = "~/Views/AdminLayout/Index.cshtml";
@@ -13,30 +13,24 @@
                         <!-- Basic Form Inputs card start -->
                         <div class="card">
                             <div class="card-header">
-                                <h5>Görsel Güncelleme Sayfası</h5>
-                                <span>Görsel ile ilgili verileri eksiksiz olarak giriniz</span>
+                                <h5>Branş Güncelleme Sayfası</h5>
+                                <span>Branş ile ilgili verileri eksiksiz olarak giriniz</span>
                             </div>
                             <div class="card-block">
                                 <form method="post">
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Görsel ID</label>
+                                        <label class="col-sm-2 col-form-label">Branş ID</label>
                                         <div class="col-sm-10">
-                                            @Html.TextBoxFor(x => x.GalleryId, new { @class = "form-control" })
+                                            @Html.TextBoxFor(x => x.BranchId, new { @class = "form-control" })
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Görsel Url</label>
+                                        <label class="col-sm-2 col-form-label">Sınıf Adı</label>
                                         <div class="col-sm-10">
-                                            @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+                                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Görsel Durum</label>
-                                        <div class="col-sm-10">
-                                            @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-primary">Görseli Güncelle</button>
+                                    <button class="btn btn-primary">Branşı Güncelle</button>
                                 </form>
                             </div>
                         </div>

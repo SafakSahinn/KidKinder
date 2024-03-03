@@ -32,4 +32,5 @@
 ![Ekran görüntüsü 2024-03-03 160502](https://github.com/SafakSahinn/KidKinder/assets/123293425/73448412-20e1-4317-86bc-77d2072c930d)
 
 # SQL Database Diagrams
+
 ![Ekran görüntüsü 2024-03-03 161022](https://github.com/SafakSahinn/KidKinder/assets/123293425/72b76edf-2c38-4225-b6d2-ab081b235909)
